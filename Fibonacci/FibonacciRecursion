@@ -1,0 +1,28 @@
+import java.util.*;
+public class FibonacciRecursion {
+    static Scanner s = new Scanner(System.in);
+    static int a = s.nextInt();    // Give the first and second element.
+    static int b = s.nextInt();
+
+    public static void main(String[] args){
+        System.out.println("Enter the number of elements");
+        int i = s.nextInt();
+        System.out.print(a + " " + b + " ");
+
+
+        fibonacc(i);
+
+    }
+
+    static void fibonacc(int i){
+
+        int c = 0;
+        if(i>=1){
+            c = a + b;
+            System.out.print(c + " ");
+            a =b;
+            b = c;
+            fibonacc(i-1);
+        }
+    }
+}
