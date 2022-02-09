@@ -11,7 +11,7 @@ public class PrimeOrNot {
     }
     
      void prime(int n) {
-         int pnum = n / 2, flag = 0;
+         int pnum = n / 2, flag = 0;        //because a number is not divisible by more than its half.
          if (n == 0 || n == 1) {
              System.out.println("Not a prime number");
          } else {
