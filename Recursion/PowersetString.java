@@ -1,6 +1,6 @@
 public class MyClass {
     public static void main(String args[]) {
-        String s = "racecar";
+        String s = "abc";
         int i =0;
         String cur=" ";
         int r = s.length()-1;
