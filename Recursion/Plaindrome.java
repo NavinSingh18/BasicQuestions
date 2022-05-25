@@ -1,4 +1,4 @@
-public class MyClass {
+public class MyClass {       //   T.C: O(n)
     public static void main(String args[]) {
         String s = "racecar";
         int l=0, r = s.length()-1;
