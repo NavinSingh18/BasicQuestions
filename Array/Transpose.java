@@ -12,8 +12,8 @@ public class MyClass {
   
   static void transpose(int[][] arr){
         int rows = arr.length;
-        int cols = arr.length;
-        int[][] arr1 = new int[rows][cols];
+        int cols = arr[0].length;
+        int[][] arr1 = new int[cols][rows];
         
         for(int i =0; i<cols; i++){
             for(int j=0; j<rows; j++){
