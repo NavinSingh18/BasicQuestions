@@ -10,12 +10,10 @@ public static int[] swapArray(int i, int[] arr){
         int n = arr.length;
         
         if(i >= n/2){
-            return new int[0];
+            return arr;
         }
         swap(i, n-i-1, arr);
-        swapArray(i + 1, arr);
-        
-        return arr;
+        return swapArray(i + 1, arr);
     }
 }
     
