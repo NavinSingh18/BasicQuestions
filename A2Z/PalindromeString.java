@@ -19,12 +19,10 @@ class HelloWorld {
     public static String reverseS(int i, String s){
         int n = s.length();
         if(i >= n/2){
-            return "";
+            return s;
         }
         s = swapString(i, n-i-1,s);
-        reverseS(i + 1, s);
-        
-        return s;
+        return reverseS(i + 1, s);
     }
         public static String swapString(int i, int j, String s){
             char[] charArray = s.toCharArray();
